@@ -1,6 +1,6 @@
 const TermsofService = () =>{
     return(
-        <div>
+        <div className="pages">
             <h2>AI Story Generator - Terms of Service</h2>
             <span>Last Updated: July 19, 2023</span>
             <p>

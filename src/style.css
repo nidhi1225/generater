@@ -14,6 +14,11 @@ body{
   flex-grow: 1;
 }
 
+.pages{
+  flex-grow: 1;
+  padding: 1%;
+}
+
 .main-context{
   height: inherit;
   display: flex;

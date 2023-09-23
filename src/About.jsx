@@ -1,6 +1,6 @@
 const About = () =>{
     return(
-        <div>
+        <div className="pages">
             <h2>About AI Story Generator</h2>
             <h3>The Future of Storytelling</h3>
             <p>

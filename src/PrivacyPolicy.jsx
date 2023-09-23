@@ -1,6 +1,6 @@
 const PrivacyPolicy = () =>{
     return(
-        <div>
+        <div className="pages">
             <h2>AI Story Generator - Privacy Policy</h2>
             <span>Last Updated: July 19, 2023</span>
 
