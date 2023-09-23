@@ -56,11 +56,6 @@ input{
   margin-top: 10px;
 }
 
-.story-container{
-  /* height: 500px;
-  overflow : scroll; */
-}
-
 #outer{
   position: absolute;
   top: 0;
