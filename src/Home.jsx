@@ -30,6 +30,30 @@ const Home = () => {
     requestStory();
   };
 
+  const downloadStory = async () => {
+    if (story) {
+      try {
+        const res = await fetch('http://localhost:5000/api/download', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ content: story }),
+        });
+  
+        // if (res.ok) {
+        //   window.location.href = 'http://localhost:5000/api/download';
+        // } else {
+        //   console.error('Failed to download story:', res.statusText);
+        // }
+      } catch (error) {
+        console.error('Error downloading story:', error);
+      }
+    } else {
+      alert('Generate a story first before downloading.');
+    }
+  };
+
   return (
     <>
     <div className="main">
@@ -43,6 +67,7 @@ const Home = () => {
         value={title}
       />
         <button className="generate" onClick={generateStory}>Generate Story</button>
+        <button className="generate" onClick={downloadStory}>Download Story</button>
         {story && (
         <div className="story-container">
           <h3>Generated Story:</h3>

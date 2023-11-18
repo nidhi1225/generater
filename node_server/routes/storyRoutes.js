@@ -15,12 +15,10 @@ router.get('/', async (req, res) => {
         const prompt = `A story about ${title} in 2000 words`
         const response = await openai.completions.create({
             model : "text-davinci-003",
-            // model: 'gpt-3.5-turbo-instruct',
             prompt : prompt,
             max_tokens : 2048,
             temperature : 1
         })
-        console.log(response)
         res.json(response);
     }
     createStory()
